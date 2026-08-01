@@ -25,6 +25,7 @@ $textExtensions = @(
 $compatibilityRules = @(
     @{ Path = "apps/web/next.config.ts"; Pattern = 'PHASE_DEVELOPMENT_SERVER|nextConfig\(phase' },
     @{ Path = "apps/web/features/conversation/ConversationWorkspace.tsx"; Pattern = 'startsWith\("mock"\)|mode === "mock"' },
+    @{ Path = "services/agent-api/tests/test_public_api_contract.py"; Pattern = 'assert re\.search\(r".*", serialized\) is None' },
     @{ Path = "services/agent-api/app/agents/nodes/growth_candidate_node.py"; Pattern = '"core-growth-r5-v1"' },
     @{ Path = "services/agent-api/app/agents/nodes/realtime_session_start_node.py"; Pattern = '"core-r13-v1"' },
     @{ Path = "services/agent-api/app/agents/nodes/realtime_speaker_turn_node.py"; Pattern = '"core_r13"' },
