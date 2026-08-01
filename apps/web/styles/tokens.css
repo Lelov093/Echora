@@ -1,0 +1,33 @@
+:root {
+  --orbital-ink: #10294b;
+  --orbital-ink-soft: #405979;
+  --orbital-muted: #687f9f;
+  --orbital-faint: #8b9db5;
+  --orbital-blue: #146ff4;
+  --orbital-blue-strong: #075fe1;
+  --orbital-blue-soft: #eaf3ff;
+  --orbital-violet: #9d76f5;
+  --orbital-violet-soft: #f1ebff;
+  --orbital-mint: #4fbe9a;
+  --orbital-mint-soft: #e7f8f1;
+  --orbital-danger: #bb4f65;
+  --orbital-warning: #a56418;
+  --orbital-canvas: #f8fbff;
+  --orbital-surface: rgba(255, 255, 255, 0.96);
+  --orbital-surface-soft: rgba(251, 253, 255, 0.88);
+  --orbital-line: #dce6f1;
+  --orbital-line-strong: #cad7e6;
+  --orbital-focus: #126cf0;
+  --orbital-shadow-raised: 0 16px 45px rgba(43, 75, 118, 0.09);
+  --orbital-shadow-overlay: 0 24px 70px rgba(28, 55, 94, 0.18);
+  --orbital-radius-sm: 6px;
+  --orbital-radius-md: 10px;
+  --orbital-radius-lg: 14px;
+  --orbital-radius-xl: 18px;
+  --orbital-sidebar-width: 228px;
+  --orbital-scope-height: 78px;
+  --orbital-footer-height: 64px;
+  --orbital-z-sticky: 20;
+  --orbital-z-popover: 40;
+  --orbital-z-toast: 60;
+}

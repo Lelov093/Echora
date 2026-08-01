@@ -1,0 +1,135 @@
+.affectSettings {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: clamp(42px, 6vw, 82px) clamp(24px, 5vw, 64px) 84px;
+  color: #334f69;
+}
+
+.affectHero {
+  max-width: 720px;
+  margin-bottom: 46px;
+}
+
+.affectHero > p {
+  margin: 0 0 11px;
+  color: #6d8298;
+  font-size: 0.67rem;
+  font-weight: 760;
+  letter-spacing: 0.12em;
+}
+
+.affectHero h1 {
+  margin: 0;
+  color: #27445f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.affectHero > span {
+  display: block;
+  margin-top: 17px;
+  color: #5f768c;
+  font-size: 0.92rem;
+  line-height: 1.85;
+}
+
+.affectCurrent {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.7fr);
+  gap: clamp(28px, 5vw, 64px);
+  padding: 30px 0 36px;
+  border-top: 1px solid rgba(112, 151, 187, 0.2);
+  border-bottom: 1px solid rgba(112, 151, 187, 0.2);
+}
+
+.affectCurrent > div > svg { color: #6e76c3; }
+.affectCurrent > div > p { margin: 12px 0 7px; color: #6f8396; font-size: 0.7rem; }
+.affectCurrent h2 { margin: 0; color: #315570; font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; font-weight: 500; }
+.affectCurrent > div > span { display: block; margin-top: 8px; color: #60778d; font-size: 0.8rem; }
+
+.affectCurrent aside {
+  align-self: center;
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: rgba(245, 252, 249, 0.78);
+}
+
+.affectCurrent aside svg { color: #378a76; }
+.affectCurrent aside strong { display: block; margin-top: 8px; font-size: 0.8rem; }
+.affectCurrent aside p { margin: 7px 0 0; color: #60778d; font-size: 0.72rem; line-height: 1.65; }
+
+.affectSection {
+  padding: 34px 0;
+  border-bottom: 1px solid rgba(112, 151, 187, 0.16);
+}
+
+.affectSectionHeading {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.7fr) minmax(0, 1.3fr);
+  gap: 28px;
+  margin-bottom: 24px;
+}
+
+.affectSectionHeading > div { display: flex; align-items: center; gap: 9px; }
+.affectSectionHeading svg { color: #6e76c3; }
+.affectSectionHeading h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; font-weight: 500; }
+.affectSectionHeading > p { margin: 0; color: #687f94; font-size: 0.76rem; line-height: 1.7; }
+
+.affectPreferences {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.affectSwitchRow { min-height: 52px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.affectSwitchRow > span,
+.affectPreferences legend { color: #4b687f; font-size: 0.8rem; font-weight: 650; }
+.affectPreferences fieldset { margin: 0; padding: 0; border: 0; }
+.affectPreferences legend { margin-bottom: 10px; }
+.affectPreferences :global(.settings-state-switch),
+.affectPreferences :global(.settings-segmented button) {
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+}
+.affectPreferenceStatus { min-height: 1.15rem; margin: 10px 0 0; color: #6c8397; font-size: .68rem; }
+
+.affectEvents button {
+  min-height: 44px;
+  border: 1px solid rgba(111, 146, 181, 0.24);
+  border-radius: 12px;
+  padding: 0 14px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #4d687f;
+  font: inherit;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.affectEvents { margin: 0; padding: 0; list-style: none; }
+.affectEvents li { padding: 20px 0; border-top: 1px solid rgba(118, 153, 187, 0.14); }
+.affectEvents li:first-child { border-top: 0; }
+.affectEvents li > div { display: flex; justify-content: space-between; gap: 16px; color: #70869a; font-size: 0.67rem; }
+.affectEvents li[data-status="invalidated"] { opacity: 0.68; }
+.affectEvents h3 { margin: 9px 0; color: #3c5a73; font-size: 0.88rem; font-weight: 620; }
+.affectEvents blockquote { margin: 8px 0 14px; padding-left: 13px; border-left: 2px solid rgba(116, 132, 207, 0.32); color: #60778d; font-size: 0.76rem; line-height: 1.65; }
+.affectEvents button { display: inline-flex; align-items: center; gap: 6px; }
+
+.affectStatus,
+.affectEmpty,
+.affectError { padding: 22px 0; color: #647c91; font-size: 0.82rem; }
+.affectError { color: #a55068; }
+
+.affectSettings button:focus-visible { outline: 2px solid #3f7fbd; outline-offset: 3px; }
+.affectSettings button:disabled { cursor: not-allowed; opacity: 0.5; }
+
+@media (max-width: 760px) {
+  .affectCurrent,
+  .affectSectionHeading,
+  .affectPreferences { grid-template-columns: 1fr; }
+  .affectSectionHeading { gap: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .affectSettings * { transition: none !important; }
+}

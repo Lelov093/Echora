@@ -1,0 +1,76 @@
+.review-inbox .companion-switcher {
+  margin-top: .9rem;
+  max-width: 100%;
+  min-height: 44px;
+}
+
+.review-inbox-overview-list {
+  max-width: 68rem;
+  margin-top: 2.25rem;
+}
+
+.review-scope-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 1rem;
+}
+
+.review-scope-page > button {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: start;
+  gap: .75rem;
+  min-height: 88px;
+  padding: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(123, 157, 194, .2);
+  border-radius: 18px;
+  color: #405b77;
+  background: rgba(255, 255, 255, .58);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.review-scope-page > button:hover {
+  border-color: rgba(111, 130, 208, .34);
+  background: rgba(255, 255, 255, .84);
+  box-shadow: 0 10px 26px rgba(79, 123, 172, .1);
+}
+
+.review-scope-page > button:focus-visible {
+  outline: 3px solid rgba(59, 117, 223, .38);
+  outline-offset: 3px;
+}
+
+.review-scope-page > button > svg:first-child {
+  flex: none;
+  margin-top: .1rem;
+  color: #62a686;
+}
+
+.review-scope-page > button > svg:last-child {
+  flex: none;
+  margin-top: .16rem;
+  color: #8a70dd;
+}
+
+.review-inbox-overview-list span {
+  display: grid;
+  gap: .22rem;
+  min-width: 0;
+}
+
+.review-inbox-overview-list strong {
+  display: block;
+  overflow-wrap: anywhere;
+  font: 500 1.02rem/1.35 Georgia, "Songti SC", serif;
+}
+
+.review-inbox-overview-list small {
+  display: block;
+  color: #71849d;
+  font-size: .72rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}

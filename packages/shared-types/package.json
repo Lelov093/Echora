@@ -1,0 +1,11 @@
+{
+  "name": "@echora/shared-types",
+  "version": "0.1.0",
+  "description": "Shared TypeScript types for Echora",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {},
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

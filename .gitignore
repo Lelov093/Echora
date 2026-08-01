@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js
+.next/
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+
+# Secrets (Discord bot tokens, registry)
+.secrets/
+*.local.json
+
+# Local agent and QA workspaces
+.agents/
+.claude/
+apps/web/.qa/
+
+# Cache & Data
+.cache/
+.data/
+.logs/
+.sandbox/
+*.stdout.log
+*.stderr.log
+**/.*-backups/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Build
+*.tsbuildinfo
+.next/
+.next-dev/
+.next-build/
+
+# Test
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Alembic versions (keep directory, ignore compiled)
+*.pyc

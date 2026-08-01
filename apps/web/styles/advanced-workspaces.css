@@ -1,0 +1,196 @@
+body[data-echora-ui-version="orbital"] .orbital-advanced-page {
+  width: auto;
+  margin: 0 24px;
+  padding: 14px 0 40px;
+  color: var(--orbital-ink);
+}
+
+.orbital-advanced-domain-nav {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border-bottom: 1px solid var(--orbital-line);
+}
+
+.orbital-advanced-domain-nav > div:first-child span,
+.orbital-advanced-page-header > div:first-child > span {
+  display: block;
+  color: var(--orbital-blue);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.orbital-advanced-domain-nav > div:first-child strong {
+  display: block;
+  margin-top: 3px;
+  color: var(--orbital-muted);
+  font-size: 0.65rem;
+  font-weight: 550;
+}
+
+.orbital-advanced-domain-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.orbital-advanced-domain-links a {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+  padding: 0 10px;
+  color: var(--orbital-muted);
+  font-size: 0.65rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.orbital-advanced-domain-links a:hover { background: #f4f7fb; color: var(--orbital-ink); }
+.orbital-advanced-domain-links a[aria-current="page"] { background: var(--orbital-blue-soft); color: var(--orbital-blue); }
+
+.orbital-advanced-page-header {
+  min-height: 118px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.orbital-advanced-page-header h1 {
+  margin: 4px 0 0;
+  font-size: clamp(1.7rem, 2.5vw, 2.45rem);
+  font-weight: 680;
+  letter-spacing: -0.035em;
+}
+
+.orbital-advanced-page-header p {
+  max-width: 76ch;
+  margin: 6px 0 0;
+  color: var(--orbital-muted);
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.orbital-advanced-context {
+  min-width: 210px;
+  display: grid;
+  gap: 6px;
+  border-left: 1px solid var(--orbital-line);
+  padding-left: 18px;
+}
+
+.orbital-advanced-context span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--orbital-ink-soft);
+  font-size: 0.65rem;
+}
+
+.orbital-advanced-embedded-body > .section-nav-shell { display: none; }
+.orbital-advanced-embedded-body > .agent-lab-page,
+.orbital-advanced-embedded-body > .tool-page,
+.orbital-advanced-embedded-body > .echora-page {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 0 32px;
+}
+
+.orbital-advanced-embedded-body .agent-lab-hero,
+.orbital-advanced-embedded-body .tool-hero,
+.orbital-advanced-trace-workspace .domain-page-hero {
+  display: none;
+}
+
+.orbital-advanced-embedded-body .dynamic-glass,
+.orbital-advanced-embedded-body .glass-soft {
+  border-color: var(--orbital-line);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.orbital-advanced-embedded-body .agent-lab-grid,
+.orbital-advanced-embedded-body .tool-grid {
+  gap: 12px;
+  margin-top: 0;
+}
+
+.orbital-advanced-embedded-body .agent-lab-panel,
+.orbital-advanced-embedded-body .tool-panel {
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.orbital-advanced-embedded-body .agent-lab-row,
+.orbital-advanced-embedded-body .tool-row {
+  border-radius: 9px;
+  background: #fbfcfe;
+}
+
+.orbital-advanced-shadow-banner {
+  margin-bottom: 12px;
+  border: 1px solid #d7ccef;
+  border-radius: 10px;
+  background: #f7f3ff;
+  color: #6f56a3;
+  padding: 11px 13px;
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+
+.orbital-advanced-trace-workspace .domain-page-body {
+  margin-top: 0;
+}
+
+.orbital-advanced-trace-workspace .domain-three-column,
+.orbital-advanced-trace-workspace .domain-stack,
+.orbital-advanced-trace-workspace .domain-page-body .grid {
+  gap: 12px;
+}
+
+.orbital-advanced-trace-workspace .domain-panel,
+.orbital-advanced-trace-workspace .trace-overview-card {
+  border-radius: 12px;
+}
+
+.orbital-advanced-channel-workspace .orbital-advanced-embedded-body > .echora-page {
+  padding-top: 0 !important;
+}
+
+.orbital-advanced-channel-workspace .orbital-advanced-embedded-body > .echora-page > section:first-child,
+.orbital-advanced-channel-workspace .domain-page-hero {
+  display: none;
+}
+
+.orbital-advanced-channel-workspace .domain-page-body {
+  margin-top: 0;
+}
+
+.orbital-advanced-channel-workspace .domain-panel,
+.orbital-advanced-channel-workspace .dynamic-glass,
+.orbital-advanced-channel-workspace .glass-soft {
+  border-radius: 12px;
+}
+
+.orbital-advanced-channel-workspace .echora-page > .grid,
+.orbital-advanced-channel-workspace .domain-page-body > .grid,
+.orbital-advanced-channel-workspace .domain-three-column {
+  gap: 12px;
+}
+
+.orbital-advanced-page button:focus-visible,
+.orbital-advanced-page a:focus-visible,
+.orbital-advanced-page input:focus-visible,
+.orbital-advanced-page select:focus-visible {
+  outline: 3px solid rgba(20, 111, 244, 0.28);
+  outline-offset: 2px;
+}

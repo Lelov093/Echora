@@ -1,0 +1,76 @@
+.unified-settings-shell { min-height: 100dvh; display: grid; grid-template-columns: 292px minmax(0,1fr); background: rgba(251,253,255,.48); }
+.unified-settings-loading { min-height:100dvh; display:grid; place-items:center; color:#71869a; background:rgba(251,253,255,.72); font-size:.78rem; }
+.unified-settings-index { position: sticky; top: 0; height: 100dvh; min-width: 0; display: flex; flex-direction: column; padding: 26px 16px 16px; border-right: 1px solid rgba(124,158,194,.15); background: rgba(251,253,255,.82); overflow-y: auto; }
+.unified-settings-index > .unified-settings-exits { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 5px; margin: 0 4px 17px; }
+.unified-settings-index > .unified-settings-exits a { min-height: 44px; display: flex; align-items: center; gap: 7px; padding: 0 9px; border-radius: 11px; color: #5d748a; font-size: .65rem; font-weight: 680; line-height: 1.25; text-decoration: none; }
+.unified-settings-index > .unified-settings-exits a:hover { background: rgba(255,255,255,.8); color: #315f91; }
+.unified-settings-index > .unified-settings-exits a.is-return { grid-column: 1 / -1; color: #6657bd; background: rgba(239,237,255,.72); }
+.unified-settings-index > .unified-settings-exits svg { flex: 0 0 auto; }
+.unified-settings-index > header { display: flex; align-items: center; gap: 11px; padding: 0 8px; }
+.unified-settings-index > header > svg { color: #6d7fd0; }
+.unified-settings-index > header small { color: #8a9db0; font-size: .61rem; font-weight: 740; letter-spacing: .11em; }
+.unified-settings-index h1 { margin: 2px 0 0; color: #274966; font-family: Georgia, "Times New Roman", serif; font-size: 1.42rem; font-weight: 500; }
+.unified-settings-index > p { margin: 14px 8px 20px; color: #71869a; font-size: .7rem; line-height: 1.6; }
+.unified-settings-scope { display: grid; gap: 6px; margin: 0 8px 20px; }
+.unified-settings-scope span { color: #7d91a5; font-size: .63rem; font-weight: 700; }
+.unified-settings-scope select { width: 100%; min-height: 42px; border: 1px solid rgba(119,153,188,.18); border-radius: 12px; padding: 0 10px; outline: 0; background: rgba(255,255,255,.82); color: #365875; font: inherit; font-size: .72rem; }
+.unified-settings-scope:focus-within select { border-color: rgba(78,133,190,.38); box-shadow: 0 0 0 3px rgba(87,143,203,.09); }
+.unified-settings-index nav { display: grid; gap: 17px; }
+.unified-settings-index nav > section > small,.unified-settings-index summary { color: #8799aa; font-size: .64rem; font-weight: 730; letter-spacing: .07em; }
+.unified-settings-index nav > section > small { display: block; padding: 0 9px 6px; }
+.unified-settings-index details > summary { min-height: 38px; display: flex; align-items: center; justify-content: space-between; padding: 0 9px; border-radius: 10px; cursor: pointer; list-style: none; }
+.unified-settings-index details > summary::-webkit-details-marker { display: none; }
+.unified-settings-index details[open] summary svg { transform: rotate(180deg); }
+.unified-settings-index nav section > div,.unified-settings-index details > div { display: grid; gap: 3px; }
+.unified-settings-index nav a { min-width: 0; min-height: 50px; display: grid; grid-template-columns: 34px minmax(0,1fr); align-items: center; gap: 8px; padding: 6px 8px; border-radius: 13px; color: #587087; text-decoration: none; }
+.unified-settings-index nav a:hover { background: rgba(255,255,255,.72); color: #315e8b; }
+.unified-settings-index nav a[aria-current="page"] { background: #fff; color: #315f91; box-shadow: 0 7px 20px rgba(74,108,147,.08); }
+.unified-settings-index nav a > svg { justify-self: center; }
+.unified-settings-index nav a > span { min-width: 0; display: grid; gap: 2px; }
+.unified-settings-index nav a strong { overflow: hidden; font-size: .72rem; text-overflow: ellipsis; white-space: nowrap; }
+.unified-settings-index nav a small { overflow: hidden; color: #91a1b1; font-size: .59rem; text-overflow: ellipsis; white-space: nowrap; }
+.unified-settings-index > footer { display: flex; gap: 7px; margin-top: auto; padding: 16px 8px 2px; border-top: 1px solid rgba(124,158,194,.14); color: #738b9d; font-size: .63rem; line-height: 1.5; }
+.unified-settings-index > footer svg { flex: 0 0 auto; color: #4aa18c; }
+.unified-settings-detail { min-width: 0; }
+.settings-overview { max-width: 1120px; margin: 0 auto; padding: clamp(42px,6vw,86px) clamp(24px,5vw,72px) 80px; }
+.settings-overview-hero { max-width: 740px; margin-bottom: 42px; }
+.settings-overview-hero > p { margin: 0 0 12px; color: #8295a9; font-size: .67rem; font-weight: 760; letter-spacing: .12em; }
+.settings-overview-hero h1 { margin: 0; color: #243f5b; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem,4vw,3.35rem); font-weight: 500; line-height: 1.14; }
+.settings-overview-hero > span { display: block; max-width: 660px; margin-top: 18px; color: #6c8297; font-size: .91rem; line-height: 1.8; }
+.settings-overview-groups { display: grid; gap: 38px; }
+.settings-overview-groups article { display: grid; grid-template-columns: minmax(130px,190px) minmax(0,1fr); gap: 28px; padding-top: 24px; border-top: 1px solid rgba(124,158,194,.16); }
+.settings-overview-groups article > div small { color: #87a094; font-size: .62rem; font-weight: 730; letter-spacing: .08em; }
+.settings-overview-groups h2 { margin: 6px 0 0; color: #35536f; font-family: Georgia, "Times New Roman", serif; font-size: 1.24rem; font-weight: 500; }
+.settings-overview-groups ul { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px 18px; margin: 0; padding: 0; list-style: none; }
+.settings-overview-groups a { min-height: 58px; display: grid; grid-template-columns: 34px minmax(0,1fr); align-items: center; gap: 9px; padding: 8px 10px; border-radius: 14px; color: #567189; text-decoration: none; }
+.settings-overview-groups a:hover { background: rgba(255,255,255,.8); color: #315f91; }
+.settings-overview-groups a > span { display: grid; gap: 3px; }
+.settings-overview-groups strong { font-size: .78rem; }
+.settings-overview-groups li small { color: #8a9cad; font-size: .65rem; }
+.unified-settings-detail > .section-nav-shell { display: none; }
+.unified-settings-detail .settings-page-shell,.unified-settings-detail .detail-workspace,.unified-settings-detail .studio-workspace { max-width: none; }
+.unified-settings-detail .settings-page-shell { max-width: none !important; }
+.unified-settings-index a:focus-visible,.unified-settings-index summary:focus-visible { outline: 2px solid #4d8bc8; outline-offset: 2px; }
+.unified-settings-scope select:focus-visible { outline: 0; }
+
+@media (max-width: 1120px) {
+  .unified-settings-shell { grid-template-columns: 250px minmax(0,1fr); }
+  .unified-settings-index nav a small { display: none; }
+}
+@media (max-width: 760px) {
+  .unified-settings-shell { display: block; }
+  .unified-settings-index { position: static; width: 100%; height: auto; padding: 18px 14px; border-right: 0; border-bottom: 1px solid rgba(124,158,194,.15); }
+  .unified-settings-index nav { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .unified-settings-index > .unified-settings-exits { grid-template-columns: repeat(4,minmax(0,1fr)); }
+  .unified-settings-index > .unified-settings-exits a.is-return { grid-column: auto; }
+  .unified-settings-index > footer { margin-top: 18px; }
+  .settings-overview { padding-top: 34px; }
+}
+@media (max-width: 640px) {
+  .unified-settings-index nav { grid-template-columns: 1fr; }
+  .unified-settings-index > .unified-settings-exits { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .unified-settings-index > .unified-settings-exits a.is-return { grid-column: 1 / -1; }
+  .settings-overview-groups article { grid-template-columns: 1fr; gap: 14px; }
+  .settings-overview-groups ul { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { .unified-settings-index * { transition: none !important; } }

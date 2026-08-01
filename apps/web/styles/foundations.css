@@ -1,0 +1,38 @@
+body[data-echora-ui-version="orbital"] {
+  background:
+    radial-gradient(circle at 78% 0%, rgba(221, 233, 255, 0.42), transparent 34%),
+    linear-gradient(180deg, #fbfdff 0%, #f7faff 100%);
+  color: var(--orbital-ink);
+}
+
+body[data-echora-ui-version="orbital"] button,
+body[data-echora-ui-version="orbital"] input,
+body[data-echora-ui-version="orbital"] select,
+body[data-echora-ui-version="orbital"] textarea {
+  font: inherit;
+}
+
+body[data-echora-ui-version="orbital"] button,
+body[data-echora-ui-version="orbital"] a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body[data-echora-ui-version="orbital"] :focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--orbital-focus) 30%, transparent);
+  outline-offset: 2px;
+}
+
+body[data-echora-ui-version="orbital"] ::selection {
+  background: rgba(20, 111, 244, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-echora-ui-version="orbital"] *,
+  body[data-echora-ui-version="orbital"] *::before,
+  body[data-echora-ui-version="orbital"] *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

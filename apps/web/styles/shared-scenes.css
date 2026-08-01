@@ -1,0 +1,134 @@
+.shared-scenes-page,
+.shared-scene-detail {
+  min-height: calc(100vh - 76px);
+  padding: 1rem clamp(1rem, 6vw, 7rem) 5rem;
+  background: radial-gradient(circle at 15% 18%, rgba(212, 228, 255, .45), transparent 30rem), radial-gradient(circle at 90% 52%, rgba(226, 244, 237, .42), transparent 28rem), #fcfdff;
+}
+
+.shared-scenes-page > header {
+  display: flex;
+  justify-content: space-between;
+  color: #7890a8;
+  font-size: .78rem;
+}
+
+.shared-scenes-page > header a {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.shared-scenes-page > header span,
+.shared-scene-detail > header {
+  color: #7890a8;
+  font-size: .76rem;
+  letter-spacing: .1em;
+}
+
+.shared-scenes-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 3rem;
+  max-width: 60rem;
+  margin: clamp(3rem, 9vh, 7rem) 0 3rem;
+}
+
+.shared-scenes-hero > div > span {
+  color: #7890a8;
+  font-size: .76rem;
+  letter-spacing: .1em;
+}
+
+.shared-scenes-page h1,
+.scene-detail-hero h1 {
+  margin: .65rem 0 0;
+  color: #173458;
+  font: 500 clamp(2.6rem, 5vw, 5rem)/1.06 Georgia, "Songti SC", serif;
+  letter-spacing: -.04em;
+}
+
+.shared-scenes-hero > p {
+  max-width: 23rem;
+  margin: 0 0 .35rem;
+  color: #6e829a;
+  font-size: .86rem;
+  line-height: 1.8;
+}
+
+.shared-scenes-list {
+  display: grid;
+  max-width: 58rem;
+  border-top: 1px solid rgba(123, 157, 194, .24);
+}
+
+.scene-row {
+  display: grid;
+  grid-template-columns: 42px 1fr 20px;
+  align-items: start;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(123, 157, 194, .24);
+  color: inherit;
+  text-decoration: none;
+}
+
+.scene-row:hover h2 { color: #5d67b8; }
+.scene-orb { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; color: #6479c8; background: #e9efff; }
+.scene-row small,
+.scene-review,
+.scene-participants small,
+.scene-experiences span,
+.shared-scene-detail aside small { color: #7f69c4; font-size: .7rem; letter-spacing: .06em; }
+.scene-row h2 { margin: .35rem 0; color: #36516e; font: 500 1.2rem/1.25 Georgia, "Songti SC", serif; }
+.scene-row p,
+.scene-detail-hero span,
+.shared-scene-detail aside p,
+.scene-empty,
+.scene-experiences p { margin: 0; color: #6e829a; line-height: 1.7; }
+.scene-review { display: flex; align-items: center; gap: .35rem; margin-top: .8rem; color: #54987b; letter-spacing: 0; }
+.scene-arrow { margin-top: 1rem; color: #9aaec2; }
+
+.shared-scene-detail > header { display: flex; justify-content: space-between; }
+.shared-scene-detail > header a { display: flex; align-items: center; gap: .4rem; color: inherit; text-decoration: none; }
+.scene-detail-hero { max-width: 52rem; margin: clamp(3rem, 9vh, 7rem) 0 3rem; }
+.scene-detail-hero p { margin: 0; color: #8a70dd; font-size: .72rem; letter-spacing: .1em; }
+.scene-detail-hero h1 { margin: .6rem 0 1rem; }
+.scene-detail-grid { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: clamp(2rem, 6vw, 7rem); }
+.scene-detail-section { padding: 0 0 1.8rem; border-top: 1px solid rgba(123, 157, 194, .24); }
+.scene-detail-section h2 { display: flex; align-items: center; gap: .55rem; margin: 1rem 0; color: #405b77; font-size: .94rem; }
+.scene-participants,
+.scene-experiences { display: grid; gap: .8rem; margin: 0; padding: 0; list-style: none; }
+.scene-participants li,
+.scene-experiences li { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid rgba(123, 157, 194, .16); }
+.scene-participants strong,
+.scene-experiences strong { display: block; color: #405b77; }
+.scene-participants span { display: block; margin-top: .25rem; color: #7890a8; font-size: .78rem; }
+.scene-participants small { display: flex; align-items: center; gap: .3rem; color: #72869c; letter-spacing: 0; }
+.scene-experiences p { margin: .4rem 0; font-size: .84rem; }
+
+.shared-scene-detail aside {
+  align-self: start;
+  padding: 1.3rem;
+  border: 1px solid rgba(91, 156, 130, .18);
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(244, 252, 249, .9), rgba(244, 248, 255, .85));
+}
+
+.shared-scene-detail aside > svg { color: #54a582; }
+.shared-scene-detail aside h2 { margin: .6rem 0; color: #405b77; font-size: 1rem; }
+.shared-scene-detail aside small { display: block; margin-top: 1rem; color: #71869d; line-height: 1.7; letter-spacing: 0; }
+
+@media (max-width: 720px) {
+  .shared-scenes-page,
+  .shared-scene-detail { padding: 1rem 1.2rem 3rem; }
+  .shared-scenes-hero { display: grid; gap: 1rem; margin: 3rem 0; }
+  .shared-scenes-page h1,
+  .scene-detail-hero h1 { font-size: 2.8rem; }
+  .scene-detail-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .scene-row { padding: 1.2rem 0; }
+  .scene-participants li,
+  .scene-experiences li { display: grid; }
+}
